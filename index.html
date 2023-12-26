@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <div class="nav">
+      <a href="#home" id="link1">Home</a>
+      <a href="#about" id="link2">About</a>
+      <a href="#skills" id="link3">Skills</a>
+      <a href="#portfolio" id="link4">Portfolio</a>
+      <a href="#contact" id="link5">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="aside">
+      <button class="btn1">D/N</button>
+    </div>
+    <div class="main">
+      <section class="home" id="home">
+        <img src="./assets/profile.jpg"></img>
+        <div class="title"><span id="typing-text"></span></div>
+        <div class="subtitle">안녕하세요. 매일 Lv+1 하는 개발자 박정현 입니다.</div>
+        <div class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui illum consequatur tempore labore totam obcaecati fuga quo iure? Dolore distinctio unde magnam sequi voluptatum alias dolorem voluptas iure perspiciatis quidem.</div>
+      </section>
+      <section class="about" id="about">
+        about<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
+      </section>
+      <section class="skills" id="skills">
+        skills<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
+      </section>
+      <section class="portfolio" id="portfolio">
+        portfolio<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
+      </section>
+      <section class="contact" id="contact">
+        contact<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
+      </section>
+    </div>
+  </div>
+  <div class="footer">
+    footer
+  </div>
+  <div class="cursor"></div>
+  <script>
+    /* 타이핑효과 */
+    const options = {
+        strings: [
+                "Hi, I'm a Web Developer🍀",
+            ],
+      typeSpeed: 50, 
+      loop: true, 
+    };
+    var typed = new Typed('#typing-text', options);
+
+    /* 마우스효과 */
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+    })
+
+    const links = document.querySelectorAll('.header .nav a');
+
+    links.forEach(link => {
+      link.addEventListener('mouseover', () => {
+        document.querySelector('.cursor').style.transform = 'scale(4)';
+      });
+
+      link.addEventListener('mouseout', () => {
+        document.querySelector('.cursor').style.transform = 'initial'; 
+      });
+    });
+
+  </script>
+  
+</body>
+</html>
