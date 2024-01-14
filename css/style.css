@@ -1,7 +1,10 @@
-*{margin: 0; padding: 0;}
+* {
+  margin: 0;
+  padding: 0;
+}
 /* *{outline: 1px solid grey} */
 
-body{
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,13 +13,11 @@ body{
   cursor: none;
 }
 
-@media (max-width: 768px) {
-  /* 여기에 스타일 작성 */
+a {
+  text-decoration: none;
 }
 
-a {text-decoration: none;}
-
-.header{
+.header {
   width: 90vw;
   height: 10vh;
   padding-bottom: 1rem;
@@ -25,7 +26,9 @@ a {text-decoration: none;}
   position: sticky;
   top: 0;
   background-color: antiquewhite;
+  z-index: 900;
 }
+
 .header .nav {
   display: flex;
   width: 90vw;
@@ -33,89 +36,261 @@ a {text-decoration: none;}
   font-size: 1.3rem;
 }
 
-.container{
+.container {
   width: 90vw;
 }
-.aside button{
+.aside button {
   position: fixed;
   top: 8vh;
   z-index: 10;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
 }
 
-.main .aside{
-  width: 5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main .home{
+.main .home {
   width: 90vw;
   height: 80vh;
-  /* background-color: honeydew; */
+  padding-bottom: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
 }
-.main .home img{
+.main .home img {
   width: 300px;
-  margin: 50px 0;
+  margin-right: 50px;
+  border-radius: 10px;
 }
-.main .home .title{
-  width: 100%; 
+#home > div > div.title {
+  width: calc(100vw - 500px);
   height: 2rem;
   font-size: 1.2rem;
   padding-left: 10px;
-  background-color: black;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #4f4537;
   color: white;
   display: flex;
   align-items: center;
 }
 
-.main .home .subtitle{
-  width: 100%; 
-}
-.main .home .intro{
-  width: 100%; 
+#home > div > div.intro {
+  width: calc(100vw - 500px);
 }
 
-.main .about{
+#about {
   height: 80vh;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
+}
+#edu_rsm01,
+#edu_rsm02,
+#edu_rsm03,
+#edu_rsm04 {
+  display: flex;
+  flex-direction: column;
+  border-left: 5px solid #4f4537;
+  height: 20px;
+  padding: 0 20px 50px;
+  margin: 20px;
 }
 
-.main .skills{
-  height: 80vh;
-  background-color: lightpink;
+[data-scroll] {
+  opacity: 1;
+  will-change: transform, opacity;
+  transform: translateY(30%);
+  transition: all 5s;
 }
 
-.main .portfolio{
+#skills {
   height: 80vh;
-  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#skills > p.skill.back,
+#skills > p.skill.front,
+#skills > p.skill.etc {
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  border: 2px solid #4f4537;
+  height: 17vh;
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.main .contact{
-  height: 80vh;
-  background-color: lightsteelblue;
+.icons {
+  /* border: 1px solid grey; */
+  width: 15vh;
+  height: 15vh;
+  overflow: hidden;
+  object-fit: cover;
 }
-.footer{
+#iconsBack02 img {
+  position: relative;
+  left: -5.7rem;
+}
+#iconsBack03 img {
+  position: relative;
+  left: -11.7rem;
+}
+#iconsBack04 img {
+  position: relative;
+  left: -17.9rem;
+}
+
+#iconsFront01 img {
+  position: relative;
+  top: -9.2rem;
+  left: -0.4rem;
+}
+#iconsFront02 img {
+  position: relative;
+  top: -9.2rem;
+  left: -6.5rem;
+}
+#iconsFront03 img {
+  position: relative;
+  top: -9rem;
+  left: -12.2rem;
+}
+#iconsFront04 img {
+  position: relative;
+  top: -9.3rem;
+  left: -18.5rem;
+}
+
+#iconsEtc01 img {
+  position: relative;
+  top: -17.5rem;
+  left: 0.1rem;
+}
+#iconsEtc02 img {
+  position: relative;
+  top: -17.5rem;
+  left: -6.3rem;
+}
+#iconsEtc03 img {
+  position: relative;
+  top: -17.5rem;
+  left: -12rem;
+}
+#iconsEtc04 img {
+  position: relative;
+  top: -17.5rem;
+  left: -18.2rem;
+}
+
+#projects {
+  height: 80vh;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#prjTitle01{
+  margin: 20px;
+}
+
+.hama_buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.hama_button{
+  background-color: darkblue;
+  color: #fff;
+  width: 20vw;
+  height: 5vh;
+  border: none;
+  cursor: pointer;
+}
+.hamaWrap{
+  display: flex;
+}
+.hama_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hama_imgs{
+  display: flex;
+  justify-content: right;
+}
+.links{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+#contact {
+  height: 40vh;
+}
+#contact1, #contact2{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 5vh;
+}
+#contact1 a, #contact2 a{
+  color: black;
+}
+#contact1 a:hover, #contact2 a:hover{
+  background-color: #4f4537;
+  color: #fff;
+}
+.footer {
   bottom: 0;
   width: 90vw;
   height: 10vh;
+  background-color: antiquewhite;
+  text-align: center;
 }
-.cursor{
+.cursor {
   background-color: #fff;
-  z-index: 100;
+  z-index: 999;
   position: fixed;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  transition: .1s;
+  transition: 0.1s;
   transform: translate(-20%, -20%);
   pointer-events: none;
   mix-blend-mode: difference;
+}
+
+@media (max-width: 960px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  #home img {
+    margin: 20px 0;
+  }
+  #home > div > div.title,
+  #home > div > div.intro {
+    width: 90%;
+  }
+  #about {
+    height: 80vh;
+  }
+  #skills > p.skill.back,
+  #skills > p.skill.front,
+  #skills > p.skill.etc {
+    padding: 10px ;
+  }
+  .hamaWrap{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects > div > div.hamaWrap > div.hama_imgs {
+    display: flex;
+    justify-content: center;
+  }
+  #projects > div > div.hamaWrap > div.hama_imgs img{
+    width: 80vw
+  }
 }

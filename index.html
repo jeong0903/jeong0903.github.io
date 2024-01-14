@@ -1,87 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/fonts.css">
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <div class="header">
-    <div class="nav">
-      <a href="#home" id="link1">Home</a>
-      <a href="#about" id="link2">About</a>
-      <a href="#skills" id="link3">Skills</a>
-      <a href="#portfolio" id="link4">Portfolio</a>
-      <a href="#contact" id="link5">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ba16334cfd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav">
+        <a href="#home" id="link1">Home</a>
+        <a href="#about" id="link2">About Me</a>
+        <a href="#skills" id="link3">Skills</a>
+        <a href="#Projects" id="link4">Projects</a>
+        <a href="#contact" id="link5">Contact</a>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="aside">
-      <button class="btn1">D/N</button>
+    <div class="container">
+      <div class="aside">
+        <button class="btn1">D/N</button>
+      </div>
+      <div class="main">
+        <section class="home" id="home">
+          <img src="./assets/profile.jpg" />
+          <div class="homeWrap">
+            <div class="title"><span id="typing-text"></span></div>
+            <div class="intro">
+              안녕하세요. 매일 Lv+1 하는 웹 개발자 박정현 입니다.<br />
+              저는 React와 Node.Js를 중심으로 꾸준히 스택을 쌓고있는 풀스택
+              주니어입니다. <br />
+              새로운 기술을 배우고 문제를 해결하는 것을 즐기며, 협업과
+              커뮤니케이션을 통해 함께 일하는 것을 중요하게 생각합니다. 개발하는
+              하루 하루가 즐거움으로 가득한 긍정의 노력파랍니다. 감사합니다.
+            </div>
+          </div>
+        </section>
+
+        <section class="about" id="about">
+          <div class="edu_rsm">
+            <h2>EDUCATION & RESUME</h2>
+            <div id="edu_rsm01" data-scroll>
+              <span>
+                <p>2010. 03. - 2014. 02.</p>
+                <p>
+                  전북 완주군 우석대학교 아동복지학과 학사 졸업 (평점평균
+                  4.2/4.5)
+                </p>
+              </span>
+            </div>
+            <div id="edu_rsm02" data-scroll>
+              <span>
+                <p>2016. 03. - 2022. 02.</p>
+                <p>
+                  부산 사하구 동아대학교 일반대학원 영유아학과 석박사 통합과정
+                  수료 (평균평점 4.28)
+                </p>
+              </span>
+            </div>
+            <div id="edu_rsm03" data-scroll>
+              <span>
+                <p>2014. 03 - 2023. 02.</p>
+                <p>어린이집(담임교사) 및 유치원(행정직) 근무</p>
+              </span>
+            </div>
+            <div id="edu_rsm04" data-scroll>
+              <span>
+                <p>2023. 06. - 2023. 11.</p>
+                <p>울산 KH 인재교육원 JAVA과정 수료(개근상)</p>
+                <br />
+                <p>정보처리기사 필기합격</p>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <h2>skills</h2>
+          <p class="skill back">
+            <b>● Back</b>
+            <span class="icons" id="iconsBack01"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsBack02"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsBack03"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsBack04"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+          </p>
+          <p class="skill front">
+            <b>● Front</b>
+            <span class="icons" id="iconsFront01"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsFront02"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsFront03"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsFront04"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+          </p>
+          <p class="skill etc">
+            <b>● ETC.</b>
+            <span class="icons" id="iconsEtc01"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsEtc02"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsEtc03"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+            <span class="icons" id="iconsEtc04"
+              ><img src="assets/icons.png" alt=""
+            /></span>
+          </p>
+        </section>
+
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <div class="hamaProject">
+            <div class="hama_buttons">
+              <button class="hama_button" data-target="hama_img2">
+                프로젝트 목표
+              </button>
+              <button class="hama_button" data-target="hama_img4">
+                기능 정의서
+              </button>
+              <button class="hama_button" data-target="hama_img5">
+                프로세스
+              </button>
+              <button class="hama_button" data-target="hama_img6">
+                데이터베이스
+              </button>
+              <button class="hama_button" data-target="hama_img7">
+                소요기술
+              </button>
+            </div>
+            <div class="hamaWrap">
+              <div class="hama_info">
+                <p>● Project Name "함께하마"</p>
+                <p>● Team Member "7"</p>
+                <p>● My Position "홈페이지 UI 구현 "</p>
+                <p>● Project period "함께하마"</p>
+              </div>
+              <div class="hama_imgs">
+                <img id="hama_img2" src="/assets/hama2.png" />
+                <img id="hama_img4" src="/assets/hama4.png" />
+                <img id="hama_img5" src="/assets/hama5.png" />
+                <img id="hama_img6" src="/assets/hama6.png" />
+                <img id="hama_img7" src="/assets/hama7.png" />
+              </div>
+            </div>
+            <div class="links">
+              <a href="http://jeong0903.github.io/assets/2팀 프로젝트 발표 PPT.pdf">프로젝트 PDF</a>
+              <a href="https://github.com/jeong0903/TeamHama.git">소스코드</a>
+              <a href="https://youtu.be/PI9B-GjoWWw">시연영상</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2>Contact</h2>
+          <ul>
+            <li id="contact1">
+              <span id="contactTitle_git">GIT</span
+              ><a href="http://jeong0903.github.io" id="gitBlog"
+                ><i class="fa-brands fa-square-github"></i
+                >jeong0903.github.io</a
+              >
+            </li>
+            <li id="contact2">
+              <span id="contactTitle_email">EMAIL</span
+              ><a href="mailto:9193jane@gmail.com" id="emailAddress"
+                ><i class="fa-solid fa-at"></i>9193jane@gmail.com</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
-    <div class="main">
-      <section class="home" id="home">
-        <img src="./assets/profile.jpg"></img>
-        <div class="title"><span id="typing-text"></span></div>
-        <div class="subtitle">안녕하세요. 매일 Lv+1 하는 개발자 박정현 입니다.</div>
-        <div class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui illum consequatur tempore labore totam obcaecati fuga quo iure? Dolore distinctio unde magnam sequi voluptatum alias dolorem voluptas iure perspiciatis quidem.</div>
-      </section>
-      <section class="about" id="about">
-        about<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
-      </section>
-      <section class="skills" id="skills">
-        skills<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
-      </section>
-      <section class="portfolio" id="portfolio">
-        portfolio<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
-      </section>
-      <section class="contact" id="contact">
-        contact<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit aspernatur perspiciatis nam consequuntur, quisquam tenetur animi explicabo necessitatibus, eaque ratione sapiente repudiandae. Possimus fugiat vitae dignissimos nisi, labore inventore!
-      </section>
+    <div class="footer">
+      <p>ⓒ2023. <span id="footerName">JEONG HYEON PARK</span>. All Rights Reserved.</p>
     </div>
-  </div>
-  <div class="footer">
-    footer
-  </div>
-  <div class="cursor"></div>
-  <script>
-    /* 타이핑효과 */
-    const options = {
-        strings: [
-                "Hi, I'm a Web Developer🍀",
-            ],
-      typeSpeed: 50, 
-      loop: true, 
-    };
-    var typed = new Typed('#typing-text', options);
+    <div class="cursor"></div>
+    <script>
+      /* 타이핑효과 */
+      const options = {
+        strings: ["Keep Calm and Code On💻"],
+        typeSpeed: 50,
+        loop: false,
+      };
+      var typed = new Typed("#typing-text", options);
 
-    /* 마우스효과 */
-    const cursor = document.querySelector('.cursor');
-    document.addEventListener('mousemove', (e) => {
-      cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-    })
-
-    const links = document.querySelectorAll('.header .nav a');
-
-    links.forEach(link => {
-      link.addEventListener('mouseover', () => {
-        document.querySelector('.cursor').style.transform = 'scale(4)';
+      /* 마우스효과 */
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
       });
 
-      link.addEventListener('mouseout', () => {
-        document.querySelector('.cursor').style.transform = 'initial'; 
-      });
-    });
+      const links = document.querySelectorAll(".header .nav a");
 
-  </script>
-  
-</body>
+      links.forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          document.querySelector(".cursor").style.transform = "scale(4)";
+        });
+
+        link.addEventListener("mouseout", () => {
+          document.querySelector(".cursor").style.transform = "initial";
+        });
+      });
+
+      // Home 링크 클릭 시 스크롤 맨 위로 이동
+      document.getElementById("link1").addEventListener("click", function () {
+        event.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // About Me 링크 클릭 시
+      document.getElementById("link2").addEventListener("click", function () {
+        event.preventDefault();
+        let targetOffset;
+        if (window.innerWidth <= 960) {
+          targetOffset = 630;
+        } else {
+          targetOffset = 500;
+        }
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      });
+
+      // Skills 링크 클릭 시
+      document.getElementById("link3").addEventListener("click", function () {
+        event.preventDefault();
+        let targetOffset;
+        if (window.innerWidth <= 960) {
+          targetOffset = 1130;
+        } else {
+          targetOffset = 980;
+        }
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      });
+
+      // Projects 링크 클릭 시
+      document.getElementById("link4").addEventListener("click", function () {
+        event.preventDefault();
+        let targetOffset;
+        if (window.innerWidth <= 960) {
+          targetOffset = 1615;
+        } else {
+          targetOffset = 1484;
+        }
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      });
+
+      // Contact 링크 클릭 시
+      document.getElementById("link5").addEventListener("click", function () {
+        event.preventDefault();
+        let targetOffset;
+        if (window.innerWidth <= 960) {
+          targetOffset = 2145;
+        } else {
+          targetOffset = 1995;
+        }
+        window.scrollTo({
+          top: targetOffset,
+          behavior: "smooth",
+        });
+      });
+
+      // Get all buttons and images
+      const buttons = document.querySelectorAll(".hama_button");
+      const images = document.querySelectorAll(".hama_imgs img");
+
+      // Add click event listeners to each button
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Get the target image ID from the data-target attribute
+          const targetImageId = button.getAttribute("data-target");
+
+          // Toggle the visibility of the target image
+          images.forEach((image) => {
+            if (image.id === targetImageId) {
+              // Toggle between 'none' and 'block' to show/hide the image
+              image.style.display =
+                image.style.display === "none" ? "block" : "none";
+            } else {
+              image.style.display = "none"; // Hide other images
+            }
+          });
+        });
+      });
+
+      images.forEach((image) => {
+        image.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
